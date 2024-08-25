@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Your Figma Plugin",
   "main": "dist/index.js",
-  "scripts": {},
+  "scripts": {
+    "format": "turbo run format",
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
   "workspaces": [
     "packages/ui",
     "packages/code"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.14"
+  }
 }
