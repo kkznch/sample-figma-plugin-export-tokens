@@ -4,18 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prepare": "panda codegen",
     "format": "biome format --write ./src ./*.ts",
     "dev": "vite build --watch",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ark-ui/react": "^3.9.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@eslint/js": "^9.9.0",
+    "@figma/plugin-typings": "^1.98.0",
+    "@park-ui/panda-preset": "^0.42.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -23,6 +27,7 @@
     "eslint": "^9.9.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
-    "vite-plugin-singlefile": "^2.0.2"
+    "vite-plugin-singlefile": "^2.0.2",
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }
